@@ -31,3 +31,12 @@ function updateTestimonial() {
         testiJob.innerHTML = 'Back End Developer';
     }
 }
+
+// lazy loading
+
+document.addEventListener('DOMContentLoaded', () => {
+    const image = document.querySelectorAll('img');
+    image.forEach(img => {
+        img.setAttribute('loading', 'lazy');
+    })
+})

@@ -454,3 +454,107 @@ video {
     color: var(--primary);
     cursor: pointer;
 }
+
+/* footer */
+footer {
+    padding: 3rem 10rem 0;
+    background-color: #021b18;
+}
+
+footer .footer {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 2fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
+}
+
+.footer .title {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.footer .about-furnio .logo img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.about-furnio .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer p, li {
+    color: #b4b4b4;
+}
+
+.footer .ft {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer .input-group {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    height: 45px;
+    border: 1px solid grey;
+    padding: 0 .5rem;
+}
+
+.mailing {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group input, button {
+    background-color: transparent;
+    color: #b4b4b4;
+    border: transparent;
+    outline: none;
+}
+
+.input-group button {
+    cursor: pointer;
+}
+
+.input-group input {
+    border-right: 1px solid grey;
+}
+
+.social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .social-media i{
+    color: var(--primary);
+    display: flex;
+    gap: .3rem;
+}
+
+.footer .social-media i:hover {
+    color: var(--four);
+    cursor: pointer;
+}
+
+footer .copyright {
+    height: 100px;
+    color: #b4b4b4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

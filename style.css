@@ -7,6 +7,10 @@
     font-family: 'Poppins';
 }
 
+html {
+    font-size: 14px;
+}
+
 :root {
     --primary: white;
     --seconcary: rgb(68, 68, 68);
@@ -14,8 +18,10 @@
     --four: salmon;
 }
 
-img,video {
+img,
+video {
     width: 100%;
+    object-fit: cover;
 }
 
 /* hero section */
@@ -25,7 +31,7 @@ img,video {
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    height: 100vh;
+    height: 720px;
 }
 
 .hero nav {
@@ -104,10 +110,11 @@ nav .icon:hover {
     margin-top: 20vh;
     text-align: center;
     color: var(--primary);
+    padding: 0 5vw;
 }
 
 .hero-content h1 {
-    font-size: 3.8rem;
+    font-size: 6vw;
     font-weight: 600;
     text-shadow: 2px 2px 3px rgb(56, 56, 56);
 }
@@ -143,7 +150,8 @@ nav .icon:hover {
 
 .benefit {
     display: flex;
-    padding: 2rem 12rem;
+    padding: 2rem 10vw;
+    gap: 1.5vw;
 }
 
 .benefit .card {
@@ -157,12 +165,16 @@ nav .icon:hover {
     font-size: 3rem;
 }
 
+.benefit .card p {
+    color: var(--seconcary);
+}
+
 /* about section */
 
 .about {
     display: grid;
     grid-template-columns: 1fr 1.3fr;
-    padding: 2rem 10rem;
+    padding: 2rem 10vw;
 }
 
 
@@ -182,7 +194,7 @@ nav .icon:hover {
     top: 20%;
     left: 15%;
     width: 40%;
-    aspect-ratio: 1/1.2;
+    height: 50%;
 }
 
 .about .about-content,
@@ -195,15 +207,17 @@ nav .icon:hover {
 
 .about-content .title,
 .services-content .title,
-.product .title, .update .title {
+.product .title,
+.update .title {
     color: var(--four);
     font-size: 1.3rem;
 }
 
 .about-content h2,
 .services-content h2,
-.product h2, .update .big-title {
-    font-size: 3rem;
+.product h2,
+.update .big-title {
+    font-size: 2.5;
     font-weight: 600;
 }
 
@@ -216,6 +230,7 @@ nav .icon:hover {
 .about-content button {
     padding: 1rem 1.5rem;
     width: 30%;
+    white-space: nowrap;
     border-radius: 2rem;
     border: transparent;
     background-color: var(--third);
@@ -227,7 +242,7 @@ nav .icon:hover {
 .services {
     display: grid;
     grid-template-columns: 1.3fr 1fr;
-    padding: 2rem 10rem;
+    padding: 2rem 10vw;
 }
 
 .services .services-img {
@@ -246,7 +261,7 @@ nav .icon:hover {
     top: 20%;
     right: 15%;
     width: 40%;
-    aspect-ratio: 1/1.2;
+    height: 50%;
 }
 
 .services-list {
@@ -273,7 +288,7 @@ nav .icon:hover {
 
 /* product section */
 .product {
-    padding: 2rem 10rem;
+    padding: 2rem 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +333,7 @@ nav .icon:hover {
 .testimoni {
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    padding: 2rem 10rem;
+    padding: 2rem 10vw;
     background-color: rgb(243, 243, 243);
     align-items: center;
     justify-content: center;
@@ -330,7 +345,7 @@ nav .icon:hover {
 }
 
 .testimoni .large-icon {
-    font-size: 10rem;
+    font-size: 10vw;
     color: var(--third);
 }
 
@@ -346,15 +361,17 @@ nav .icon:hover {
 }
 
 .testi-box .detail .user-detail {
-    display: flex;
+    display: grid;
+    grid-template-columns: .5fr 1.5fr;
+    place-items: center;
     gap: .5rem;
 }
 
 .testi-box .detail .user-detail img {
-    width: 10%;
+    width: 70%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
 .user-detail span {
@@ -366,7 +383,7 @@ nav .icon:hover {
 }
 
 .detail .arrow-icon {
-    font-size: 2rem;
+    font-size: 4vw;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -381,7 +398,7 @@ nav .icon:hover {
 
 /* Update Section */
 .update {
-    padding: 2rem 10rem;
+    padding: 2rem 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,9 +406,8 @@ nav .icon:hover {
 }
 
 .update .news-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    gap: 1.4rem;
 }
 
 .news-container img {
@@ -416,7 +432,7 @@ nav .icon:hover {
     text-align: center;
 }
 
-.news .detail-news h2{
+.news .detail-news h2 {
     font-weight: 600;
 }
 
@@ -457,7 +473,7 @@ video {
 
 /* footer */
 footer {
-    padding: 3rem 10rem 0;
+    padding: 3rem 10vw 0;
     background-color: #021b18;
 }
 
@@ -486,7 +502,8 @@ footer .footer {
     gap: 1rem;
 }
 
-footer p, li {
+footer p,
+li {
     color: #b4b4b4;
 }
 
@@ -520,7 +537,8 @@ footer p, li {
     gap: 1rem;
 }
 
-.input-group input, button {
+.input-group input,
+button {
     background-color: transparent;
     color: #b4b4b4;
     border: transparent;
@@ -540,7 +558,7 @@ footer p, li {
     gap: 1rem;
 }
 
-.footer .social-media i{
+.footer .social-media i {
     color: var(--primary);
     display: flex;
     gap: .3rem;
@@ -557,4 +575,105 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2rem 0;
+}
+
+.payment {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.payment img {
+    width: 50px;
+    background-color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.list-payment {
+    display: flex;
+    gap: 1rem;
+}
+
+/* responsive */
+
+/* tablet */
+@media (max-width: 979px) {
+
+    nav .nav-list,
+    nav .icon {
+        display: none;
+    }
+
+    nav .menu {
+        display: block;
+    }
+
+
+}
+
+/* tablet mini */
+@media (max-width: 768px) {
+
+    .hero-content {
+        gap: 2rem;
+    }
+
+    .hero-content .cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about,
+    .services {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+
+
+    .benefit {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .product .product-list,
+    .update .news-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-container {
+        flex-wrap: wrap;
+    }
+
+    .news-container .news {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .testimoni {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* handphone */
+@media(max-width:480px) {
+    .about-content button {
+        width: 45%;
+    }
+
+    .product .product-list {
+        grid-template-columns: 1fr;
+    }
 }

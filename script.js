@@ -32,11 +32,9 @@ function updateTestimonial() {
     }
 }
 
-// lazy loading
 
-document.addEventListener('DOMContentLoaded', () => {
-    const image = document.querySelectorAll('img');
-    image.forEach(img => {
-        img.setAttribute('loading', 'lazy');
-    })
+const menuIcon = document.querySelector('.menu');
+const dropdown = document.querySelector('.dropdown');
+menuIcon.addEventListener('click', function () {
+    dropdown.classList.toggle('open');
 })

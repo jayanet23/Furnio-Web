@@ -641,7 +641,7 @@ footer .copyright {
     align-items: center;
 }
 
-.dropdown.open .nav-list, .nav-list ul {
+.dropdown.open .dropdown-list, .dropdown-list ul {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
